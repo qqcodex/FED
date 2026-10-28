@@ -7,33 +7,32 @@ body {
   margin: 0;
 }
 
-.top {
+header {
   background-color: #6e298d;
   color: #ffffff;
   padding: 1rem 1.5rem;
 }
 
-.title {
-  font-size: 1.75rem;
+.site-name {
   font-weight: bold;
+  margin: 0;
 }
 
-.content {
+main {
   max-width: 40rem;
   margin: 0 auto;
   padding: 1rem 1.5rem;
 }
 
-.part-title {
+h2 {
   color: #6e298d;
   font-size: 1.25rem;
-  font-weight: bold;
 }
 
 label {
   display: block;
   font-weight: bold;
-  margin
+  margin-bottom: 0.25rem;
 }
 
 /* TODO 3: the form looks cramped.
@@ -43,10 +42,8 @@ label {
    Use padding, border and margin to fix this.
    Change one property at a time and check the result. */
 
-#workshop-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.form-field {
+  margin-bottom: 1rem;
 }
 
 input,
@@ -54,8 +51,7 @@ select,
 textarea {
   font: inherit;
   border: 1px solid #69717a;
-  margin: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 button {
@@ -63,6 +59,7 @@ button {
   background-color: #6e298d;
   color: #ffffff;
   border: 2px solid #6e298d;
+  padding: 0.5rem 1rem;
 }
 
 /* Status message (the prepared JavaScript writes text here) */
@@ -77,11 +74,9 @@ button {
 /* TODO 4: after a valid sign-up, the status message is very hard to read.
    Use DevTools to find which declaration wins, explain why,
    then fix the cause. */
-#workshop-form p {
-  color: #e6e7e9;
-}
 
-.bottom {
+
+footer {
   color: #69717a;
   padding: 1rem 1.5rem;
 }
