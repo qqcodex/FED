@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Workshop Sign-up</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- Campus Workshop Sign-up · FED Lesson 04 practical (starter)
+       Use fictional details only. Nothing is sent or stored.
+       KEEP these IDs: workshop-form, full-name, email, workshop, status -->
+
+  <!-- TODO 1: replace the generic wrappers below with elements that describe
+       the content (for example header, main, section, footer).
+       Use logical heading levels (one h1, then h2 for each section). -->
+  <header>
+    <h1>Campus Workshop Sign-up</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>About the workshops</h2>
+      <p>Short, hands-on sessions run by student volunteers. All details here are fictional.</p>
+    </section>
+
+    <section class="form-section">
+      <h2>Sign up</h2>
+
+      <form id="workshop-form">
+        <!-- TODO 2: connect every visible label to its control (for = id).
+             Add a suitable name and type to each control.
+             Make Full name, Email and Workshop required. -->
+        <div class="form-field">
+          <label for="full-name">Full name</label>
+          <input id="full-name" type="text" name="full-name" required>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+
+        <div class="form-field">
+          <label for="workshop">Workshop</label>
+          <select id="workshop" name="workshop" required>
+            <option value="">Choose a workshop</option>
+            <option value="portfolio">Build a simple portfolio page</option>
+            <option value="accessible-forms">Friendly forms for everyone</option>
+            <option value="css-colour">Colour and contrast basics</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="questions">Questions for the facilitator</label>
+          <textarea id="questions" rows="3"></textarea>
+        </div>
+
+        <button type="submit">Sign up</button>
+        <p id="status" class="message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Teaching prototype · nothing is sent or stored</p>
+  </footer>
+</body>
+</html>
