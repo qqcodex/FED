@@ -1,0 +1,6 @@
+body { margin:0; font-family:Arial,sans-serif; color:#27313b; background:#f6f7f9; }
+main { max-width:48rem; margin:auto; padding:2rem; }
+.activity-card { max-width:28rem; padding:1rem; border:1px solid #69717a; border-radius:.5rem; background:white; }
+.status { padding-left:.5rem; font-weight:bold; }
+.status-available { border-left:4px solid #2e7d32; }
+.status-full { border-left:4px solid #b3261e; }
