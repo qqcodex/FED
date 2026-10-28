@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activity Finder</title>
+  <style>
+    body {
+      /* TODO: change one declaration with a visible effect. */
+      padding: 1rem;
+      font-family: Georgia, serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- TODO: choose a meaningful new heading. -->
+  <h1>Find your hobbies!</h1>
+  <p>Chess, Coding and Cycling</p>
+  <script>
+    const titles = ["Chess", "Coding", "Cycling"];
+    // Change query, save and reload for each required check.
+    const query = "";
+    const matches = [];
+    const normalisedQuery = query.toLowerCase();
+    for (const title of titles) {
+      if (title.toLowerCase().includes(normalisedQuery)) {
+        matches.push(title);
+      }
+    }
+    console.log(matches);
+  </script>
+</body>
+</html>
