@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Directory – Lesson 03 Practical</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Activity Directory</h1>
+    <p>Find a student activity by keyword and category.</p>
+  </header>
+
+  <main>
+    <form id="activity-form" class="filter-form">
+      <label>Keyword
+        <input id="keyword" type="text" placeholder="e.g. club">
+      </label>
+      <label>Category
+        <select id="category">
+          <option value="all">All categories</option>
+          <option value="sports">Sports</option>
+          <option value="arts">Arts</option>
+          <option value="community">Community</option>
+          <option value="technology">Technology</option>
+        </select>
+      </label>
+      <button type="submit">Search</button>
+      <button id="clear" type="button" class="secondary">Clear</button>
+    </form>
+
+    <p id="status" class="status">8 activities found</p>
+
+    <!-- Each card has two classes: activity-card and its category.
+         The category class matches an <option value> above. -->
+    <section id="activity-list" class="activity-list">
+      <article class="activity-card sports">
+        <h2>Badminton Club</h2>
+        <p>Weekly social games for all levels.</p>
+      </article>
+      <article class="activity-card sports">
+        <h2>Campus Fun Run</h2>
+        <p>A 5 km run around the campus.</p>
+      </article>
+      <article class="activity-card arts">
+        <h2>Photography Club</h2>
+        <p>Learn composition on photo walks.</p>
+      </article>
+      <article class="activity-card arts">
+        <h2>Ukulele Jam</h2>
+        <p>Play simple songs together.</p>
+      </article>
+      <article class="activity-card community">
+        <h2>Senior Digital Buddies</h2>
+        <p>Help seniors use everyday apps safely.</p>
+      </article>
+      <article class="activity-card community">
+        <h2>Beach Clean-up</h2>
+        <p>Join a weekend coastal clean-up.</p>
+      </article>
+      <article class="activity-card technology">
+        <h2>Coding Club</h2>
+        <p>Build small web projects with friends.</p>
+      </article>
+      <article class="activity-card technology">
+        <h2>Robotics Workshop</h2>
+        <p>Assemble and program a simple robot.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
